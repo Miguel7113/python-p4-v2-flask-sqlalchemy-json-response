@@ -6,11 +6,6 @@ from flask_migrate import Migrate
 
 from models import db, Pet
 
-from flask import Flask, make_response
-from flask_migrate import Migrate
-
-from models import db, Pet
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
